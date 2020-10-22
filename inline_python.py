@@ -95,8 +95,7 @@ class _InlineMixin(_Mixin):
                 s = self.convert(e)
                 # Replace the selection with transformed text
                 self.view.replace(edit, region, s)
-                msg = "InlinePython :: Replacing with `%s`" % s
-                print(msg)
+                # print("InlinePython :: Replacing with `%s`" % s)
             except Exception as e:
                 msg = "InlinePython :: Error evaluating `%s` (%s)" % (s, str(e))
                 sublime.status_message(msg)
